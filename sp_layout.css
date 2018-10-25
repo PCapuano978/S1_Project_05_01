@@ -16,21 +16,29 @@
 /* Window and Body Styles */
 
 html {
-    height: 100%;
-    min-height: 100%;
-    margin: auto auto;
-}
-
-body {
     width: 95%;
     min-width: 640px;
     max-width: 960px;
     min-height: 100%;
-    margin: auto auto;
+    margin: auto;
+    
+    
+    
 }
 
+/* Effecting the whole page here under the <html> tags is having the margin of the page being automatically
+centered to the user's page layout and setting heights to be using all of the space provided. */
 
+/* body {
+    width: 95%;
+    min-width: 640px;
+    max-width: 960px;
+    min-height: 100%;
+    margin: auto;
+} */
 
+/* In the <body> tags, the whole section itself will be using 95% of the user's space while working with
+640 - 960 pixels of the height, while having its own margin also automatically lengthened. */
 
 /* Row Styles */
 
@@ -40,13 +48,19 @@ body {
         display: table;
 }
 
+/* Every element after an assinged element of the class "row" will be changed to have both floats cleared 
+in the display of a table to assist in the format of how these class assinged elements are to be laid out. */
+
 /* Page Header Styles */
 
-body > header > img {
+body  header img {
     display: block;
     width: 70%;
     float: left;
 }
+
+/* Every imgage that is directly nested withing a header which is then directly nested withing body tags
+is stated here to float left with an overall width of 70% and have their display changed to block. */
 
 header nav {
     float: left;
@@ -55,10 +69,16 @@ header nav {
     width: 26%;
 }
 
+/* Every nav nested within a header will be floated left and have both horizontal paddings of left and 
+right be of 2%, while the width is to have 26%; meaning that it will overall take up 30% of its space. */
+
 header nav a {
     display: block;
     width: 100%;
 }
+
+/* All nav links in a header are stated by this style rule do be displayed as a block type while having
+100% of their width at all times. */
 
 /* Horizontal Navigation List Styles */
 
@@ -67,6 +87,9 @@ header nav a {
     width: 12.5%;
     float: left;
 }
+
+/* All list items with the class of "horizontal" also have a block display and keep their floats to
+the left while having 12.5% width. */
 
 /* Topics Styles */
 
@@ -78,21 +101,36 @@ ul#topics li {
     margin-right: 1.5%;
 }
 
+/* All list items under an unordered list with an ID of "topics" have their display changed to block
+with a width of 20% and being floated to the left. Finally, their right margin's length is to be 1.5%
+with the left margin being declared to always be absent. */
+
 ul#topics li::first-line {
     margin-left: 7.75%;
     margin-right: 7.75%;
 }
+
+/* This specific selector targets any first list item on a line that must be nested in an unordered list
+with the ID name of "topics". If these cases are meet, then the element will have both their left
+and right margins be 7.75% of their length.  */
 
 ul#topics li img {
     display: block;
     width: 50%;
     margin: auto auto;
 }
+
+/* Images in a list item which then must be in a "topic" assigned unordered list have a display of block 
+with an automatic margin centered and a width being half of the image's size.*/
+
 /* HR Styles */
 
 hr {
     width: 50%;
 }
+
+/* Any thematic break inserted into the page are told to only have half of their width according to this
+style rule assinged. */
 
 /* Customer Comment Styles */
 
@@ -101,12 +139,21 @@ ul#comments {
     margin: 40px auto 40px auto;
 }
 
+/* Any unordered list with an ID of "comments" will be given a width of 75% and a margin that has
+lengthes detailing the top and bottom be 40 pixels and the left and right be automatic. */
+
+/*  */
+
 ul#comments li {
     display: block;
     width: 50%;
     float: left;
     margin-bottom: 30px;
 }
+
+/* Detailing the specific list items in that unordered list with an ID of "comments" with pretain to
+have a display style of "block", a width of 50%, their bottom margin being 30 pixels exact, and they'll 
+lastly be floated to the left side of the page. */
 
 ul#comments li img {
     display: block;
@@ -115,13 +162,22 @@ ul#comments li img {
     float: left;
 }
 
+/* Images within list elements that are contained in the unordered list with an ID of "comments" will
+share a "block" display style, a width of 20%, 0% top and bottom margins with 5% left and right margins,
+and finally beign flaoted to the left in addition.  */
+
 ul#comments li p {
     float: left;
     width: 70%;
 } 
+
+/* All paragraphs as list items in an unordered list with an ID of "comments" will just be floated to
+the left and have all sides of their margins be 70%. */
 
 /* Footer Styles */
 
 footer {
     clear: both;
 }
+
+/* The footer element (or any more for that matter) will have both floats cleared thanks to this. */
