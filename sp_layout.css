@@ -16,26 +16,20 @@
 /* Window and Body Styles */
 
 html {
-    width: 95%;
-    min-width: 640px;
-    max-width: 960px;
     min-height: 100%;
     margin: auto;
-    
-    
-    
 }
 
 /* Effecting the whole page here under the <html> tags is having the margin of the page being automatically
 centered to the user's page layout and setting heights to be using all of the space provided. */
 
-/* body {
+body {
     width: 95%;
     min-width: 640px;
     max-width: 960px;
     min-height: 100%;
     margin: auto;
-} */
+}
 
 /* In the <body> tags, the whole section itself will be using 95% of the user's space while working with
 640 - 960 pixels of the height, while having its own margin also automatically lengthened. */
